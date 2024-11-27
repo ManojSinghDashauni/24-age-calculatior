@@ -18,15 +18,15 @@
 
 @layer components {
   .error-color {
-    @apply text-red-600 font-normal italic text-sm mt-2;
+    @apply text-red-600 font-normal italic sm:text-sm text-[8px] mt-2;
   }
 
   .label-color {
-    @apply text-gray-600 font-bold text-base mb-2;
+    @apply text-gray-600 font-bold sm:text-base text-sm mb-2;
   }
 
   .input {
-    @apply sm:w-40  w-24 font-bold text-[32px] border-[1px] rounded-md outline-none pl-4 in-range:border-green-500 out-of-range:border-red-500 invalid:border-red-500;
+    @apply sm:w-40  max-w-20 font-bold sm:text-[32px] text-2xl border-[1px] rounded-md outline-none sm:pl-4 p-2 text-center in-range:border-green-500 out-of-range:border-red-500 invalid:border-red-500;
   }
 
   .input-area {
