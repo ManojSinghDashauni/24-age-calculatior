@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+
+  /* font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic; */
+
+  /* font-weight: 700; */
+}
+
+@layer components {
+  .error-color {
+    @apply text-red-600 font-normal italic text-sm mt-2;
+  }
+
+  .label-color {
+    @apply text-gray-600 font-bold text-base mb-2;
+  }
+
+  .input {
+    @apply sm:w-40  w-24 font-bold text-[32px] border-[1px] rounded-md outline-none pl-4 in-range:border-green-500 out-of-range:border-red-500 invalid:border-red-500;
+  }
+
+  .input-area {
+    @apply flex flex-col;
+  }
+  .result {
+    @apply pt-10 sm:text-8xl text-4xl border-t-2 border-t-gray-200;
+  }
+
+  .btn {
+    @apply absolute -top-5 right-[40%] sm:right-0 sm:-top-10 sm:size-20 size-14 bg-purple-500 rounded-full flex justify-center items-center hover:bg-black;
+  }
+}
